@@ -189,6 +189,12 @@ function Rectangle(xpos, ypos){
     
 }
 
+function storeName(){
+    var name = document.getElementById("playerName").value;
+    console.log("Player Name - " + name);
+    
+}
+
 canvas.addEventListener("click", function(event) { // Event listener for when the canvas is clicked
     console.log("Click"); // logs "Click" to check if the canvas has been clicked
     cont = 2;
@@ -265,6 +271,7 @@ function repeatme(){
     if(check == 6){
         clear(); // if all blocks are deleted, clear the canvas
     }
+    
     paddle.drawPaddle();
     paddle.move();
     livesCont();
