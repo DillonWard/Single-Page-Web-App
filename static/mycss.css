@@ -1,0 +1,73 @@
+canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: 60px;
+    display: block;
+    border: 1px solid grey;
+    border-radius: 25px;
+}
+
+input[type=text]{
+    padding: 12px 22px;
+    margin: 14px 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.lives {
+    border-bottom: 1px solid #999;
+    padding-bottom: 12px;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    font-family: "Verdana", Geneva, sans-serif;
+}
+
+/* Float the list items side by side */
+ul.topnav li {
+    float: left;
+}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 25px;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {
+    background-color: #555;
+}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {
+    display: none;
+}
+
+button {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
