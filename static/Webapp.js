@@ -190,9 +190,11 @@ function Rectangle(xpos, ypos){
 }
 
 function storeName(){
-    var name = document.getElementById("playerName").value;
-    console.log("Player Name - " + name);
     
+    if(cont == 6 || lives == 0){
+        var name = document.getElementById("playerName").value;
+        console.log("Player Name - " + name);  
+    }    
 }
 
 canvas.addEventListener("click", function(event) { // Event listener for when the canvas is clicked
