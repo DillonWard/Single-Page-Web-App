@@ -9,6 +9,10 @@ var score = 0;
 var check = 0;
 var lives = 3;
 var paddle;
+var name = [];
+var nameCount = 0;
+var ran = 0;
+var restart = 0;
 
 var ball = {
     // Dimensions and velocity for the ball
@@ -53,10 +57,10 @@ function livesCont(){
            lives -= 1;
            console.log("Lives left: " + lives);
        } // decrements lives if the ball hits the bottom of the canvas
-       
-       if(lives <= 0){ // if lives are gone clear the canvas and stop the ball
-          clear(); 
-       } 
+    
+    if(lives === 0){
+        clear();
+    }
 }
 
 // for displaying the score
@@ -130,9 +134,7 @@ function init(){ // for drawing the blocks to hit
         rect[i].drawBlock();     
     }
     
-   paddle = new Paddle();
-   paddle.drawPaddle();
-    
+    paddle = new Paddle();
 }
     
  // function for the blocks
@@ -154,7 +156,6 @@ function Rectangle(xpos, ypos){
     
     // check if the ball is colliding with the squares
     this.colliding = function(ball){
-        
         var distX = Math.abs(ball.x - this.x - this.w / 2); // x distance between the ball and blocks
         var distY = Math.abs(ball.y - this.y - this.h / 2); // y distance between the ball and blocks
         
@@ -190,11 +191,12 @@ function Rectangle(xpos, ypos){
 }
 
 function storeName(){
-    
     if(cont == 6 || lives == 0){
-        var name = document.getElementById("playerName").value;
-        console.log("Player Name - " + name);  
-    }    
+        name = document.getElementById("playerName").value;
+        console.log("Player Name - " + name); 
+        nameCount += 1;
+        
+    }
 }
 
 canvas.addEventListener("click", function(event) { // Event listener for when the canvas is clicked
@@ -228,18 +230,42 @@ $(document.body).on('keydown', function(e) {
 
 // function for clearing the canvas
 function clear(){
-    
     ctx.clearRect(0, 0, canvas.width, canvas.height);
         ball.x = 10;
         ball.y = 10;
 }
 
+function reset(){
+    ball.x = 200;
+    ball.y = 400;
+    score = 0;
+    check = 0;
+    lives = 3;
+    restart = 1;
+    cont = 1;
+    vx = 5;
+    vy = 5;
+    
+    console.log("Restarted")
+    
+    if(restart === 1){
+        livesCont();
+        scoreCont();
+        Paddle();
+        init();
+        Rectangle();
+        storeName();
+        paddle.drawPaddle();
+        paddle.move();
+    }
+}
+
 // function to get the animation going
 function repeatme(){
+    ran += 1;
     //clear the canvas
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     // if the controller for click is 2, the ball is drawn and starts moving
-    
     if(cont == 2){
         ball.draw();
         ball.move();
@@ -265,13 +291,11 @@ function repeatme(){
         }
         else {
             rect[i].drawBlock();
-        }
-        
-        
+        }  
     }
     
-    if(check == 6){
-        clear(); // if all blocks are deleted, clear the canvas
+    if(check === 6){
+        clear();
     }
     
     paddle.drawPaddle();
