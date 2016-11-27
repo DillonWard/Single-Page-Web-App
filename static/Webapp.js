@@ -296,6 +296,7 @@ function repeatme(){
     
     if(check === 6){
         clear();
+        
     }
     
     paddle.drawPaddle();
