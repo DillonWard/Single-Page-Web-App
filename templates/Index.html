@@ -8,6 +8,8 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Block Breaker</title>
       <!-- Imports the CSS File for styling the webpage -->
+        <link rel="stylesheet" type="text/css" href="../static/mycss.css" media="screen" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
         <link rel="stylesheet" type="text/css" href="../static/mycss.css" media="screen"/>
 
     <!-- Bootstrap -->
@@ -17,27 +19,27 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-     
   </head>
-  <body>
-      
-       
+  <body>   
       <ul class="topnav" id="myTopnav">
           <li><a href="/">Game</a></li>
           <li><a  href = "/scores">High Scores</a></li>
           <li><a  href = "/GitHub">GitHub</a></li> 
-          <li class="icon">
+          <li class="icon">              
               
       <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
   </li>
 </ul>
       <div class = "lives">
           <t style= "text-align: centre; font-size: 30px; font-family: Verdana, Geneva, sans-serif;">Lives: <t style= "font-size: 30px; font-family: Verdana, Geneva, sans-serif;" id = "lives"></t></t>
-          <t style= "font-size: 30px; font-family: Verdana, Geneva, sans-serif;" id = "lives"></t>&nbsp;&nbsp;
+          <t style= "font-size: 30px; font-family: Verdana, Geneva, sans-serif;" id = "lives"></t>&nbsp;
+          
           <t style= "font-size: 30px; font-family: Verdana, Geneva, sans-serif;"> Score: <t style= "font-size: 30px; font-family: Verdana, Geneva, sans-serif;" id = "score"> &nbsp; </t></t>
           &nbsp;
           <t style= "text-align: centre; font-size: 30px; font-family: Verdana, Geneva, sans-serif;">Player Name: </t>
-          <input type="text" font-size="70px" id="playerName"><button onclick = "storeName()">Submit</button>&nbsp;<button onclick = "reset()">Restart</button>
+          <input type = "text" font-size = "70px" name = "playerName"><button id = "submitName" onclick = "storeName()" placeholder = "Enter Player Name" >Submit</button>&nbsp;<button onclick = "reset()">Restart</button>
+          <t style= "font-size: 30px; font-family: Verdana, Geneva, sans-serif;" id = "lives"></t>&nbsp;&nbsp;
+          <t style= "font-size: 30px; font-family: Verdana, Geneva, sans-serif;"> Score: <t style= "font-size: 30px; font-family: Verdana, Geneva, sans-serif;" id = "score"> &nbsp; </t></t>
       </div>
     
       <canvas id="canvasOne"></canvas>

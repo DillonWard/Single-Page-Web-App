@@ -1,13 +1,13 @@
 canvas {
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: auto;
-    margin-top: 60px;
-    display: block;
-    border: 1px solid grey;
-    border-radius: 25px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: auto !important;
+    margin-top: 60px !important;
+    display: block !important;
+    border: 1px solid grey !important;
+    border-radius: 25px !important;
 }
 
 input[type=text]{
@@ -63,6 +63,13 @@ ul.topnav li.icon {
 
 button {
     background-color: red;
+    border: none !important;
+    color: white !important;
+    padding: 14px 25px !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+    font-size: 16px !important;
     border: none;
     color: white;
     padding: 14px 25px;

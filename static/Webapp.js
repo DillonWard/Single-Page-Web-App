@@ -9,6 +9,11 @@ var score = 0;
 var check = 0;
 var lives = 3;
 var paddle;
+var name;
+var nameCount = 0;
+var ran = 0;
+var restart = 0;
+//var db = new CouchDB('http://localhost:5984/_utils/#/database/game_scores/_all_docs');
 var name = [];
 var nameCount = 0;
 var ran = 0;
@@ -305,6 +310,5 @@ function repeatme(){
     scoreCont();
     window.requestAnimationFrame(repeatme);
 }
-
 init();
 repeatme();
