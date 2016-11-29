@@ -10,12 +10,9 @@ var check = 0;
 var lives = 3;
 var paddle;
 var name;
-var nameCount = 0;
 var ran = 0;
 var restart = 0;
 //var db = new CouchDB('http://localhost:5984/_utils/#/database/game_scores/_all_docs');
-var name = [];
-var nameCount = 0;
 var ran = 0;
 var restart = 0;
 
@@ -71,7 +68,7 @@ function livesCont(){
 // for displaying the score
 function scoreCont(){
     document.getElementById('score').innerHTML = score; // displays the score to the canvas
-    
+    $('#score').val(score);
 }
 
 function Paddle (){
@@ -197,9 +194,8 @@ function Rectangle(xpos, ypos){
 
 function storeName(){
     if(cont == 6 || lives == 0){
-        name = document.getElementById("playerName").value;
+        name = document.getElementById("pname");
         console.log("Player Name - " + name); 
-        nameCount += 1;
         
     }
 }

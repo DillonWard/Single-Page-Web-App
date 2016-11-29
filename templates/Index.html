@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-    
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,6 +18,7 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+      
   </head>
   <body>   
       <ul class="topnav" id="myTopnav">
@@ -31,26 +31,23 @@
   </li>
 </ul>
       <div class = "lives">
-          <t style= "text-align: centre; font-size: 30px; font-family: Verdana, Geneva, sans-serif;">Lives: <t style= "font-size: 30px; font-family: Verdana, Geneva, sans-serif;" id = "lives"></t></t>
-          <t style= "font-size: 30px; font-family: Verdana, Geneva, sans-serif;" id = "lives"></t>&nbsp;
-          
-          <t style= "font-size: 30px; font-family: Verdana, Geneva, sans-serif;"> Score: <t style= "font-size: 30px; font-family: Verdana, Geneva, sans-serif;" id = "score"> &nbsp; </t></t>
-          &nbsp;
-          <t style= "text-align: centre; font-size: 30px; font-family: Verdana, Geneva, sans-serif;">Player Name: </t>
-          <input type = "text" font-size = "70px" name = "playerName"><button id = "submitName" onclick = "storeName()" placeholder = "Enter Player Name" >Submit</button>&nbsp;<button onclick = "reset()">Restart</button>
-          <t style= "font-size: 30px; font-family: Verdana, Geneva, sans-serif;" id = "lives"></t>&nbsp;&nbsp;
-          <t style= "font-size: 30px; font-family: Verdana, Geneva, sans-serif;"> Score: <t style= "font-size: 30px; font-family: Verdana, Geneva, sans-serif;" id = "score"> &nbsp; </t></t>
+              <t style= "text-align: centre; font-size: 30px; font-family: Verdana, Geneva, sans-serif;">Lives: <t style= "font-size: 30px; font-family: Verdana, Geneva, sans-serif;" id = "lives"></t></t>
+              <t style= "font-size: 30px; font-family: Verdana, Geneva, sans-serif;" id = "lives"></t>&nbsp;
+              <t style= "font-size: 30px; font-family: Verdana, Geneva, sans-serif;"> Score: <p style= "font-size: 30px; font-family: Verdana, Geneva, sans-serif;" id = "score"> &nbsp; </p></t>
+              <input type = "text" font-size = "70px" id="pname" placeholder= "Enter Player Name" >&nbsp;
+              <button id = "savename" value = "savename" onclick = "storeName()" >Submit</button>&nbsp;
+              <button onclick = "reset()">Restart</button>   
       </div>
     
       <canvas id="canvasOne"></canvas>
+      <br/><br/><br/>
       <script type="text/javascript"></script>
       <!-- Imports the JavaScript for the webpage for functionality --> 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <script src="../static/Webapp.js"></script>
+      <script src="../static/main.js"></script>
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-         
-      
   </body>
     
 </html>
