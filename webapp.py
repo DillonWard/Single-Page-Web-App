@@ -31,6 +31,10 @@ def saveScore():
 @app.route('/feedback', methods = ['GET','POST'])
 def feedback():
     if request.method == 'POST':
+        rows = fb.view('_all_docs', include_docs = True)
+        docs = [row.doc for row in rows]
+        test = json.dumps(docs)
+        posts = json.loads(test)
         saveDoc = myflask.request.get_json();
         fb.save(saveDoc)
         return render_template("feedback.html", posts = posts)
@@ -42,18 +46,6 @@ def feedback():
         posts = json.loads(test)
         posts.reverse()
         return render_template("feedback.html", posts = posts)
-'''
-@app.route('/saveFeedback', methods = ['GET','POST'])
-def feedback():
-    
-    
-    rows = fb.view('_all_docs', include_docs = True)
-    docs = [row.doc for row in rows]
-    test = json.dumps(docs)
-    posts = json.loads(test)
-    posts.reverse()
-    return posts
-    '''
 
 @app.route('/GitHub')
 def github():
