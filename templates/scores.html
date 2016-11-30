@@ -21,28 +21,46 @@
       <ul class="topnav" id="myTopnav">
           <li><a href="/">Game</a></li>
           <li><a  href = "/scores">High Scores</a></li>
+          <li><a  href = "/feedback">Feedback</a></li>
           <li><a  href = "/GitHub">GitHub</a></li>
           <li class="icon">
           </li>
       </ul>
       
-      <table>
-          <tr>
-              <td id = "td11"></td><td id = "td12"></td>
-          </tr>
-      </table>
+      <div id = "list" class = "header">
+            <h2>List of Scores</h2>
+        </div>
     </head>
     
     <body>     
         <canvas id="canvasOne"></canvas>
-        <script type="text/javascript"></script>
+        
         <!-- Imports the JavaScript for the webpage for functionality -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="../static/main.js"></script>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>         
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <table style="width:100%">
+          <tr>
+            <th>Name</th>
+            <th>Score</th> 
+          </tr>
+          
+              
+        {% for post in posts %}
+        
+        <tr>
+        <td>{{ post.name }}</td>
+        <td>{{ post.score }}</td> 
+      </tr>
+ {% endfor %}
+</table>
+        
+        
+        
     </body>
     
 </html>

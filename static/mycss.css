@@ -10,19 +10,14 @@ canvas {
     border-radius: 25px !important;
 }
 
-input[type=text]{
-    padding: 12px 22px;
-    margin: 14px 0;
-    box-sizing: border-box;
-    font-size: 18px;
-    display: inline-block;
-}
-
 .lives {
     border-bottom: 1px solid #999;
     padding-bottom: 12px;
     overflow: hidden;
     text-align: center;
+    text-align: center;
+    font-size: 30px !important; 
+    font-family: Verdana, Geneva, sans-serif !important;
 }
 
 /* Remove margins and padding from the list, and add a black background color */
@@ -50,7 +45,9 @@ ul.topnav li a {
     transition: 0.3s;
     font-size: 25px;
 }
-
+.savename{
+    background-color: #F44336 !important;
+}
 /* Change background color of links on hover */
 ul.topnav li a:hover {
     background-color: #555;
@@ -62,7 +59,7 @@ ul.topnav li.icon {
 }
 
 button {
-    background-color: red;
+    background-color: #F44336 !important;
     border: none !important;
     color: white !important;
     padding: 14px 25px !important;
@@ -70,11 +67,4 @@ button {
     text-decoration: none !important;
     display: inline-block !important;
     font-size: 16px !important;
-    border: none;
-    color: white;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
 }

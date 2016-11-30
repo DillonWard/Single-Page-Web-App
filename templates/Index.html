@@ -24,18 +24,21 @@
       <ul class="topnav" id="myTopnav">
           <li><a href="/">Game</a></li>
           <li><a  href = "/scores">High Scores</a></li>
-          <li><a  href = "/GitHub">GitHub</a></li> 
+          <li><a  href = "/feedback">Feedback</a></li>
+          <li><a  href = "/GitHub">GitHub</a></li>
           <li class="icon">              
               
       <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+              
   </li>
 </ul>
+      <BR></BR>
       <div class = "lives">
-              <t style= "text-align: centre; font-size: 30px; font-family: Verdana, Geneva, sans-serif;">Lives: <t style= "font-size: 30px; font-family: Verdana, Geneva, sans-serif;" id = "lives"></t></t>
-              <t style= "font-size: 30px; font-family: Verdana, Geneva, sans-serif;" id = "lives"></t>&nbsp;
-              <t style= "font-size: 30px; font-family: Verdana, Geneva, sans-serif;"> Score: <p style= "font-size: 30px; font-family: Verdana, Geneva, sans-serif;" id = "score"> &nbsp; </p></t>
+              <t>Lives: <t id = "lives"></t></t>
+              <t id = "lives"></t>&nbsp;
+              <t> Score: <t id = "score"> &nbsp; </t></t>
               <input type = "text" font-size = "70px" id="pname" placeholder= "Enter Player Name" >&nbsp;
-              <button id = "savename" value = "savename" onclick = "storeName()" >Submit</button>&nbsp;
+              <button id = "savename" color = "" value = "savename" onclick = "storeName()" >Submit</button>&nbsp;
               <button onclick = "reset()">Restart</button>   
       </div>
     
@@ -45,9 +48,11 @@
       <!-- Imports the JavaScript for the webpage for functionality --> 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
       <script src="../static/Webapp.js"></script>
       <script src="../static/main.js"></script>
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      
   </body>
     
 </html>

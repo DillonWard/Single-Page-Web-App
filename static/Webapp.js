@@ -10,10 +10,6 @@ var check = 0;
 var lives = 3;
 var paddle;
 var name;
-var ran = 0;
-var restart = 0;
-//var db = new CouchDB('http://localhost:5984/_utils/#/database/game_scores/_all_docs');
-var ran = 0;
 var restart = 0;
 
 var ball = {
@@ -26,7 +22,7 @@ var ball = {
 
     draw: function(){
         ctx.beginPath(); // initialize the circle
-        ctx.fillStyle = "rgb(255, 0, 0)"; // the color of the circle
+        ctx.fillStyle = "#F44336"; // the color of the circle
         ctx.arc(this.x, this.y, this.r, 0, 2 * Math.PI, false);
         ctx.stroke(); // draw the outline
         ctx.fill(); // fill with color
@@ -69,7 +65,7 @@ function livesCont(){
 function scoreCont(){
     document.getElementById('score').innerHTML = score; // displays the score to the canvas
     $('#score').val(score);
-}
+} // allows the score to be visible and stored
 
 function Paddle (){
     
@@ -81,7 +77,7 @@ function Paddle (){
     this.drawPaddle = function(){
         ctx.beginPath();
         ctx.rect(this.x, this.y, this.w, this.h);
-        ctx.fillStyle="rgb(255, 0, 0)";
+        ctx.fillStyle="#F44336";
         ctx.fill();
         ctx.lineWidth = 3;
         ctx.strokeStyle = 'grey';
@@ -152,7 +148,7 @@ function Rectangle(xpos, ypos){
     this.drawBlock = function(){
         ctx.beginPath();
         ctx.rect(this.x, this.y, this.w, this.h);
-        ctx.fillStyle="rgb(255, 0, 0)";
+        ctx.fillStyle="#F44336";
         ctx.fill();
     }; // draws the blocks
     
@@ -192,7 +188,7 @@ function Rectangle(xpos, ypos){
     
 }
 
-function storeName(){
+function storeName(){ // stores the name
     if(cont == 6 || lives == 0){
         name = document.getElementById("pname");
         console.log("Player Name - " + name); 
@@ -236,7 +232,7 @@ function clear(){
         ball.y = 10;
 }
 
-function reset(){
+function reset(){ // function to restart the game
     ball.x = 200;
     ball.y = 400;
     score = 0;
@@ -263,7 +259,6 @@ function reset(){
 
 // function to get the animation going
 function repeatme(){
-    ran += 1;
     //clear the canvas
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     // if the controller for click is 2, the ball is drawn and starts moving
