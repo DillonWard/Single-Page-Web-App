@@ -47,25 +47,7 @@ var ball = {
    }   
 }
 
-// controller for the lives
-function livesCont(){
-    document.getElementById('lives').innerHTML = lives; // displaying the lives to the canvas
-    
-    if(ball.y > canvas.height - ball.r){
-           lives -= 1;
-           console.log("Lives left: " + lives);
-       } // decrements lives if the ball hits the bottom of the canvas
-    
-    if(lives === 0){
-        clear();
-    }
-}
 
-// for displaying the score
-function scoreCont(){
-    document.getElementById('score').innerHTML = score; // displays the score to the canvas
-    $('#score').val(score);
-} // allows the score to be visible and stored
 
 function Paddle (){
     
@@ -126,14 +108,7 @@ function Paddle (){
     
 }
     
-function init(){ // for drawing the blocks to hit    
-    for(var i = 1; i <= 6; i++){
-        rect[i] = new Rectangle(((100 * i) + 10), 25);
-        rect[i].drawBlock();     
-    }
-    
-    paddle = new Paddle();
-}
+
     
  // function for the blocks
 function Rectangle(xpos, ypos){
@@ -188,13 +163,6 @@ function Rectangle(xpos, ypos){
     
 }
 
-function storeName(){ // stores the name
-    if(cont == 6 || lives == 0){
-        name = document.getElementById("pname");
-        console.log("Player Name - " + name); 
-        
-    }
-}
 
 canvas.addEventListener("click", function(event) { // Event listener for when the canvas is clicked
     console.log("Click"); // logs "Click" to check if the canvas has been clicked
@@ -225,11 +193,50 @@ $(document.body).on('keydown', function(e) {
     }    
 });
 
+function init(){ // for drawing the blocks to hit    
+    for(var i = 1; i <= 6; i++){
+        rect[i] = new Rectangle(((100 * i) + 10), 25);
+        rect[i].drawBlock();     
+    }
+    
+    paddle = new Paddle();
+}
+
+// controller for the lives
+function livesCont(){
+    document.getElementById('lives').innerHTML = lives; // displaying the lives to the canvas
+    
+    if(ball.y > canvas.height - ball.r){
+           lives -= 1;
+           console.log("Lives left: " + lives);
+       } // decrements lives if the ball hits the bottom of the canvas
+    
+    if(lives === 0){
+        clear();
+    }
+}
+
+// for displaying the score
+function scoreCont(){
+    document.getElementById('score').innerHTML = score; // displays the score to the canvas
+    $('#score').val(score);
+} // allows the score to be visible and stored
+
+
+
 // function for clearing the canvas
 function clear(){
     ctx.clearRect(0, 0, canvas.width, canvas.height);
         ball.x = 10;
         ball.y = 10;
+}
+
+function storeName(){ // stores the name
+    if(cont == 6 || lives == 0){
+        name = document.getElementById("pname");
+        console.log("Player Name - " + name); 
+        
+    }
 }
 
 function reset(){ // function to restart the game

@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
+/* Some CSS used taken from W3School and Bootstrap */
 
 body {
     font-family: "Roboto", helvetica, arial, sans-serif;
@@ -174,7 +175,7 @@ td.text-right {
   text-align: right;
 }
 
-/* Remove margins and padding from the list, and add a black background color */
+
 ul.topnav {
     list-style-type: none;
     margin: 0;
@@ -184,12 +185,12 @@ ul.topnav {
     font-family: "Verdana", Geneva, sans-serif;
 }
 
-/* Float the list items side by side */
+
 ul.topnav li {
     float: left;
 }
 
-/* Style the links inside the list items */
+
 ul.topnav li a {
     display: inline-block;
     color: #f2f2f2;
@@ -200,12 +201,12 @@ ul.topnav li a {
     font-size: 25px;
 }
 
-/* Change background color of links on hover */
+
 ul.topnav li a:hover {
     background-color: #555;
 }
 
-/* Hide the list item that contains the link that should open and close the topnav on small screens */
+
 ul.topnav li.icon {
     display: none;
 }
