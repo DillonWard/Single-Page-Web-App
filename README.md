@@ -42,6 +42,7 @@ Different JS files are linked to different HTML files or CSS files, but all are 
 * [Flask](http://flask.pocoo.org/)
 * [CouchDB](http://couchdb.apache.org/)
 * [Python 3](https://www.python.org)
+* [NPM](https://www.npmjs.com/)
 
 To run the application, open [CMDER](http://cmder.net/) and change the directory to the folder the webapp.py [location](http://prntscr.com/ddu5fo). Once you've done this, you can run the application locally:
 ```
@@ -97,6 +98,13 @@ Python is an interpreted, interactive, object-oriented, widely used programming 
 
 ##### Installation
 To install **Python 3**, go to the official [Python](https://www.python.org/downloads/) website and install it. Let the installation run and you can install Flask.
+
+
+### NPM
+NPM is the defauly package manager for the JavaScript runtime environment Node.js. NPM makes it easy for JavaScript developers to share the code that they've created to solve particular problems, and for other developers to reuse that code in their own applications.
+
+##### Installation
+To intall NPM, you have to go to the [Node.js](https://nodejs.org/en/download/) and download Nodejs - NPM comes with Node.js.
 
 ## Conclusion
 In conclusion, I found that CouchDB is very useful and simple if you are only sending simple data - such as a name and score as I did, easy to store and display. I found writing the game in raw JS easy because I had previously written some code that was related to what I was doing in my project. Even so, I feel it would be more beneficial for me to write the game in another version of JS that I could learn more from scripting. Writing the game was the easy part because of the way I wrote it, the difficulty came with representing the data.
