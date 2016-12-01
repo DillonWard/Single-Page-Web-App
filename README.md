@@ -44,7 +44,6 @@ $ py webapp.py
 
 Once the application is running, it can be accessed by entering into your browser http://127.0.0.1:4000/ after which the game will be visible and everything is up and running!
 
-<<<<<<< HEAD
 > Any technologies mentioned below should be installed prior to running the application.
 
 ### Flask
