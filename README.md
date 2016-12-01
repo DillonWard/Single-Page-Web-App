@@ -1,5 +1,5 @@
 # Single Page Web App
-=======
+>>>>>>>>>>>>>>>>
 ## Introduction
 The following repository contains code for a third-year undergraduate project for the module Data Representation and Querying. The mopdule is taught to undergraduate students at GMIT in the Department of Computer Science and Applied Physics. The lecturer is Ian McLoughlin.
 
@@ -17,3 +17,8 @@ $ py webapp.py
 ```
 
 Once the application is running, it can be accessed by entering into your browser http://127.0.0.1:4000/ after which the game will be visible and everything is up and running!
+
+## Flask
+Flask is a web framework, it is designed to support the development of web applications - provides the user with tools and libraries. Flask does not require particular tools or libraries, so it can be imported, installed and used right away. 
+
+## CouchDB
