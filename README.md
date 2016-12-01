@@ -66,7 +66,7 @@ Flask is a web framework that is designed to support the development of web appl
 Before installing Flask, ensure that Python is installed.
 Once you have Python installed, you can install Flask with the command:
 ```
-$ pip install Flask
+$ py pip install Flask
 ```
 
 ### CouchDB
@@ -83,7 +83,8 @@ Apache CouchDB is an open source database that allows you to store and return da
 First, go to the [CouchDB](http://couchdb.apache.org/) website and download the CouchDB installer compatible with your version of Windows/Machine.
 Once that's finished installing, use the command:
 ```
-$ pip install Flask
+$ sudo pip install couchdb
+
 ```
 
 ### Python 3
