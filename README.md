@@ -31,6 +31,12 @@ Once a button was pressed was called in the navigation bar, it would go to a rou
 
 Inside the routing file, the databases are initialized and specified by name. Data stored in the form of variables are then sent and saved in the database as independent documents.
 
+## Architecture
+Inside the main folder there are 2 other folders and 2 files.
+The folders are labeled "static" and contain JS and CSS files - the other folder is called "templates" and contains HTML files.
+The 2 files are "webapp" which is the python file and "Readme" which is the readme for the project.
+Different JS files are linked to different HTML files or CSS files, but all are linked to the Python file.
+
 ## How to run the application
 ### Technologies Used
 * [Flask](http://flask.pocoo.org/)
