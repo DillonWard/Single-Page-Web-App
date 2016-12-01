@@ -44,6 +44,7 @@ $ py webapp.py
 
 Once the application is running, it can be accessed by entering into your browser http://127.0.0.1:4000/ after which the game will be visible and everything is up and running!
 
+<<<<<<< HEAD
 > Any technologies mentioned below should be installed prior to running the application.
 
 ### Flask
@@ -94,3 +95,13 @@ To install **Python 3**, go to the official [Python](https://www.python.org/down
 
 
 
+=======
+## Flask
+Flask is a web framework, it is designed to support the development of web applications - provides the user with tools and libraries. Flask does not require particular tools or libraries, so it can be imported, installed and used right away. 
+
+## CouchDB
+Apacheis an open source database that allows you to store and return data easily. Each database is a collection of independent documents. Data is stored on your own servers that are hosted locally. 
+
+## Python 3
+Python is an interpreted, interactive, object-oriented, widely used programming language that emphasizes code readability. Python is generally used for web development. Using Python commands you can create, update, store and retrieve data from a database.
+>>>>>>> 89f2ad3582938330ae6651457a9147425cd255b7
