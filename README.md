@@ -92,16 +92,7 @@ Python is an interpreted, interactive, object-oriented, widely used programming 
 ##### Installation
 To install **Python 3**, go to the official [Python](https://www.python.org/downloads/) website and install it. Let the installation run and you can install Flask.
 
-
-
-=======
-## Flask
-Flask is a web framework, it is designed to support the development of web applications - provides the user with tools and libraries. Flask does not require particular tools or libraries, so it can be imported, installed and used right away. 
-
-## CouchDB
-Apacheis an open source database that allows you to store and return data easily. Each database is a collection of independent documents. Data is stored on your own servers that are hosted locally. 
-
-## Python 3
-Python is an interpreted, interactive, object-oriented, widely used programming language that emphasizes code readability. Python is generally used for web development. Using Python commands you can create, update, store and retrieve data from a database.
+## Conclusion
+In conclusion, I found that CouchDB is very useful and simple if you are only sending simple data - such as a name and score as I did, easy to store and display. I found writing the game in raw JS easy because I had previously written some code that was related to what I was doing in my project. Even so, I feel it would be more beneficial for me to write the game in another version of JS that I could learn more from scripting. Writing the game was the easy part because of the way I wrote it, the difficulty came with representing the data.
 
 ###### *Dillon Ward - GMIT- Galway*
