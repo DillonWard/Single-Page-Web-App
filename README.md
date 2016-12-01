@@ -23,3 +23,6 @@ Flask is a web framework, it is designed to support the development of web appli
 
 ## CouchDB
 Apacheis an open source database that allows you to store and return data easily. Each database is a collection of independent documents. Data is stored on your own servers that are hosted locally. 
+
+## Python 3
+Python is an interpreted, interactive, object-oriented, widely used programming language that emphasizes code readability. Python is generally used for web development. Using Python commands you can create, update, store and retrieve data from a database.
