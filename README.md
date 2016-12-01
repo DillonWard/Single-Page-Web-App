@@ -1,5 +1,5 @@
 # Single Page Web App
-====================
+-------------
 ## Introduction
 The following repository contains code for a third-year undergraduate project for the module Data Representation and Querying. The mopdule is taught to undergraduate students at GMIT in the Department of Computer Science and Applied Physics. The lecturer is Ian McLoughlin.
 
