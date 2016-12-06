@@ -21,7 +21,7 @@ If the all the Blocks are removed from the screen OR if the lives reaches 0 the 
 Later on an input box was added to the top of the screen where a player could enter their name - they cannot submit their name until the game ends. Once they enter their name, the score they are on and the name entered are stored in variables.
 
 #### Database
-The Database used in the application is CouchDB. I decided to use CouchDB because of its simplicity as I was - ititially - going to be storing just a name and a score.
+The Database used in the application is CouchDB. I decided to use CouchDB because of its simplicity as I was - initially - going to be storing just a name and a score.
 ##### How the Database works
 The name and score is saved and stored as variables. Those variables are sent to a JS file (main.js) where empty variables are waiting to grab the information that is taken in and sent. Once the variables are stored within the JS file, they are passed through an [Ajax](https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started) call and stored to a database using a POST method. The information is stored and sent to the database through Python. The information is then taken in from the database, through Python, and posted onto the HTML file 'High Scores' which is accessed through the navigation bar.
 
